@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Leonida Legends — GTA VI Trophy Guide &amp; Tracker</title>
+<meta name="description" content="An offline guide and tracker for all 55 PlayStation 5 trophies of Grand Theft Auto VI: roadmap to the platinum, missable flags, cited guides, checklist with saved progress.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="hero">
+  <div>
+    <p class="kicker">Grand Theft Auto VI · PlayStation 5 · Offline guide</p>
+    <h1>Leonida Legends</h1>
+    <p class="sub">Every one of the 55 official trophies — with a guide in our own words, a cited source beside each one, a roadmap to the platinum, and a tracker that remembers your progress.</p>
+  </div>
+  <div class="progress-card" id="progressCard">
+    <p class="big" id="progressText">0 of 55 earned</p>
+    <div class="bar"><div class="fill" id="progressFill" style="width:0%"></div></div>
+    <p class="small" id="progressDetail">0 platinum · 0 gold · 0 silver · 0 bronze</p>
+    <p class="small">Progress is saved in this browser only (localStorage). Nothing leaves your device.</p>
+  </div>
+</header>
+
+<main>
+<section id="roadmapSection" aria-labelledby="roadmapTitle">
+  <h2 id="roadmapTitle">Roadmap to the platinum</h2>
+  <p id="roadmapIntro"></p>
+  <ol id="roadmapList" class="roadmap"></ol>
+</section>
+
+<section id="trackerSection" aria-labelledby="trackerTitle">
+  <h2 id="trackerTitle">Trophy tracker</h2>
+  <div class="controls">
+    <label>Search <input id="search" type="search" placeholder="Search name or description"></label>
+    <label>Kind
+      <select id="kindFilter">
+        <option value="all">All kinds</option>
+        <option value="story">Story</option>
+        <option value="missable">Missable</option>
+        <option value="collectibles">Collectibles</option>
+        <option value="activities">Activities</option>
+        <option value="online">Online</option>
+      </select>
+    </label>
+    <label>Grade
+      <select id="gradeFilter">
+        <option value="all">All grades</option>
+        <option value="platinum">Platinum</option>
+        <option value="gold">Gold</option>
+        <option value="silver">Silver</option>
+        <option value="bronze">Bronze</option>
+      </select>
+    </label>
+    <label>Show
+      <select id="earnedFilter">
+        <option value="all">All trophies</option>
+        <option value="unearned">Not yet earned</option>
+        <option value="earned">Earned only</option>
+      </select>
+    </label>
+    <label class="check"><input id="spoilerToggle" type="checkbox"> Spoiler-safe mode (hide story trophy names until earned)</label>
+    <button id="exportBtn" type="button">Export progress</button>
+    <label class="importBtn">Import progress <input id="importInput" type="file" accept="application/json,.json"></label>
+    <button id="resetBtn" type="button">Reset progress</button>
+  </div>
+  <p id="resultCount" class="small"></p>
+  <p id="onlineNote" class="note" hidden>The official PlayStation list for GTA VI has no online trophies, so this filter is empty by design — every trophy can be earned offline.</p>
+  <ul id="trophyList" class="trophies"></ul>
+  <p id="emptyNote" class="note" hidden>No trophies match these filters. Try clearing the search or choosing another kind.</p>
+</section>
+
+<section id="detailSection" aria-labelledby="detailTitle" hidden>
+  <h2 id="detailTitle">Trophy guide</h2>
+  <article id="detailCard" class="detail"></article>
+  <button id="closeDetail" type="button">Close guide</button>
+</section>
+
+<section aria-labelledby="aboutTitle">
+  <h2 id="aboutTitle">About this guide</h2>
+  <p>Names, descriptions and grades are the official PlayStation trophy list, shown exactly as published. Every guide is written in our own words for this guide, built from those descriptions, and each one names its sources — the official PlayStation trophy list, Exophase and PSNProfiles — so you can check where each fact comes from. No guide text is copied from another guide. The game was not yet released when this guide was written, so where the official description is the only source, the guide says so and sticks to what the description supports.</p>
+  <p>Missable means the trophy is tied to a one-time moment or a specific setup that is easy to walk past; each missable trophy carries a note explaining why. Story mission trophies are not missable — missions can be replayed. This guide is an independent fan-made tracker. It uses no Rockstar logo, artwork, box art or game screenshots; the look is its own.</p>
+</section>
+</main>
+
+<footer>
+  <p>Leonida Legends — an independent, offline fan-made guide. Not affiliated with Rockstar Games or PlayStation.</p>
+</footer>
+
+<script type="module" src="app.js"></script>
+</body>
+</html>
